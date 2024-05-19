@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/app_text_color"
+            android:paddingBottom="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp">
+
+            <TextView
+                android:id="@+id/text_btn_1"
+                android:tag="0"
+                android:text="Color"
+                style="@style/panel_btn_style" />
+
+            <TextView
+                android:id="@+id/text_btn_2"
+                android:tag="1"
+                android:text="Pattern"
+                style="@style/panel_btn_style" />
+
+            <TextView
+                android:id="@+id/text_btn_3"
+                android:tag="2"
+                android:text="Fonts"
+                style="@style/panel_btn_style" />
+
+            <TextView
+                android:id="@+id/text_btn_4"
+                android:tag="3"
+                android:layout_marginRight="0dp"
+                android:text="Add Text"
+                style="@style/panel_btn_style" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ViewFlipper
+                android:id="@+id/text_panel_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/panel_text_color" />
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/panel_text_pattern" />
+            </ViewFlipper>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

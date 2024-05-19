@@ -1,0 +1,16 @@
+<resources>
+
+
+    <string name="app_name">Label Maker</string>
+
+    <string name="crop__cancel">CANCEL</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="no_saved_pics">No saved Logo</string>
+    <string name="search_menu_title">Search</string>
+    <string name="sharetext">This amazing picture was created using</string>
+    <string name="sharetext1">Make your own ..</string>
+
+</resources>

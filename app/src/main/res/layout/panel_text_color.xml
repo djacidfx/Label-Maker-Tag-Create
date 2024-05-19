@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.demo.labelmaker.colorpicker.LineColorPicker
+        android:id="@+id/text_color_bar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_weight="1"
+        app:colors="@array/sample_colors"
+        app:orientation="horizontal"
+        app:selectedColorIndex="0" />
+
+    <ImageView
+        android:id="@+id/text_color_picker"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_3sdp"
+        android:src="@drawable/ic_add" />
+</LinearLayout>

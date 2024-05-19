@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner1"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/drawing_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <com.demo.labelmaker.sticker.StickerLayout
+                android:id="@+id/drawing_space"
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_290sdp"
+                android:layout_centerInParent="true"
+                app:showBorder="true"
+                app:showIcons="true">
+
+                <ImageView
+                    android:id="@+id/frame_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_5sdp" />
+            </com.demo.labelmaker.sticker.StickerLayout>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/panel_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/_5sdp">
+
+            <ViewFlipper
+                android:id="@+id/panel_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    layout="@layout/panel_logos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <include
+                    layout="@layout/panel_shapes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <include
+                    layout="@layout/panel_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </ViewFlipper>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/patterns"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_above="@+id/footer"
+            android:background="#363f3f3f"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/textPtnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/crop__ic_cancel" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomButtons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/app_text_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/_2sdp">
+
+                <androidx.cardview.widget.CardView style="@style/editor_btn_style">
+
+                    <TextView
+                        android:id="@+id/tags_btn"
+                        style="@style/editor_btn_text"
+                        android:tag="0"
+                        android:text="Logos" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/editor_btn_style">
+
+                    <TextView
+                        android:id="@+id/frame_btn"
+                        style="@style/editor_btn_text"
+                        android:tag="1"
+                        android:text="Shapes" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/editor_btn_style">
+
+                    <TextView
+                        android:id="@+id/text_btn"
+                        style="@style/editor_btn_text"
+                        android:tag="2"
+                        android:text="Add Text" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView style="@style/editor_btn_style">
+
+                    <TextView
+                        android:id="@+id/save_btn"
+                        style="@style/editor_btn_text"
+                        android:tag="3"
+                        android:text="Save" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

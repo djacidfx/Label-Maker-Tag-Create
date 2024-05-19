@@ -1,0 +1,84 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="editor_btn_style" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/_3sdp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="cardCornerRadius">@dimen/_5sdp</item>
+    </style>
+    <style name="editor_btn_text" parent="">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="main_btn_style" parent="">
+        <item name="android:layout_width">@dimen/_110sdp</item>
+        <item name="android:layout_height">@dimen/_73sdp</item>
+        <item name="android:layout_margin">@dimen/_2sdp</item>
+    </style>
+    <style name="panel_btn_style" parent="">
+        <item name="android:textColor">@color/app_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/_1sdp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="share_btn_style" parent="">
+        <item name="android:layout_width">@dimen/_40sdp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+    <style name="text_btn_style" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/_30sdp</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+
+    <style name="Crop" parent="">
+    </style>
+    <style name="Crop.ActionButton" parent="@style/Crop">
+        <item name="android:background">@drawable/crop__selectable_background</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="Crop.ActionButtonText" parent="@style/Crop">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/crop__button_text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+    <style name="Crop.ActionButtonText.Cancel" parent="@style/Crop.ActionButtonText">
+        <item name="android:text">@string/crop__cancel</item>
+        <item name="android:drawableLeft">@drawable/crop__ic_cancel</item>
+    </style>
+    <style name="Crop.ActionButtonText.Done" parent="@style/Crop.ActionButtonText">
+        <item name="android:text">@string/crop__done</item>
+        <item name="android:drawableLeft">@drawable/crop__ic_done</item>
+    </style>
+    <style name="Crop.DoneCancelBar" parent="@style/Crop">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/crop__button_bar</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/crop__bar_height</item>
+        <item name="android:divider">@drawable/crop__divider</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">12dp</item>
+    </style>
+</resources>
